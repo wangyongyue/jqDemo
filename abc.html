@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ab</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="ab.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+            $("button").click(function(){
+                // $("p").hide();
+                alert(a.name)
+
+            });
+            $(".button").text('我去')
+            $(".button").text(function(i,value){
+                return value + "abc"
+            })
+           
+            var div =  $("<div></div>")
+            $("body").append(div)
+            div.append(a.ab())
+            div.append(b.ab())
+            div.append(c.ab())
+
+            $(div).click(function(event){
+                var a1 = event.target.innerHTML
+                if (a1 == "button1"){
+                    alert(a.vid)
+                }
+                
+            })
+
+        });
+        var a = new T("sdf")
+        var b = new T("sdfbbbbb")
+        var c = new T("sdfdsfdf")
+
+
+    </script>
+</head>
+<body>
+    <p class="ab">蒂d芬</p>
+    <button class="button">button</button>
+    <div class="content"><div>
+</body>
+</html>
+

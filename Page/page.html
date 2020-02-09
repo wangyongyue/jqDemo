@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../Page/Component/Com100.js"></script>
+    <script type="text/javascript" src="../Page/Component/Com101.js"></script>
+    <script type="text/javascript" src="../Page/Component/Com102.js"></script>
+
+    <script>
+        
+        $(document).ready(function(){
+            
+            $(".page").append(a.com())
+            $(".page").append(b.com())
+            $(".page").append(c.com())
+
+            $(".page").click(function(event){
+                var a1 = event.target.tagName
+                if (a1 == "BUTTON"){
+                    alert(a1)
+                }
+                
+            })
+
+        });
+        var a = new Com100("aaaa")
+        var b = new Com101("bbbb")
+        var c = new Com102("ccccc")
+
+    </script>
+</head>
+<body>
+    <div class="page"></div>
+</body>
+</html>
