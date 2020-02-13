@@ -1,16 +1,11 @@
-class Com100 {
-    constructor(name) {
-        this.name = name
-        this.com = function () {
-            var _this = this
-            var div = $("<div></div>")
-            var text = $("<p></p>").text(_this.name)
-            $(div).append(text)
-           
-            return div
-        }
+
+function Com100(name){
+
+    this.name = name
+    this.div = $("<div></div>")
+
+    var _this = this
+    var text = $("<p></p>").text(_this.name)
+    $(this.div).append(text)
         
-    }
-   
-    
 }
